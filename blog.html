@@ -1,315 +1,289 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>망원 셔츠룸 모음 — 블로그 | 길거리 브루탈리스트</title>
-    <meta name="description" content="망원 셔츠룸, 왜 너는 아직도 거기 없냐? 진짜 셔츠룸의 기준은 망원에서 시작된다. 요즘 뜨는 망원동 셔츠룸 모음, 완벽 정리. 010-6279-0862">
-    <meta name="keywords" content="망원 셔츠룸, 망원 셔츠룸 모음, 망원동 셔츠룸, 셔츠룸, 망원, 셔츠, street brutalist, pbn">
-    <meta name="robots" content="index, follow">
-    <meta name="bpaas-design-system" content="brutalist-avantgarde">
-    <meta name="bpaas-design-theme" content="kr-acid-yellow">
-    <link rel="canonical" href="https://mangwon-review-tip.link-hub.org/blog.html">
-    <!-- OG / Twitter -->
-    <meta property="og:type" content="article">
-    <meta property="og:url" content="https://mangwon-review-tip.link-hub.org/blog.html">
-    <meta property="og:title" content="망원 셔츠룸 모음 — 블로그 | 길거리 브루탈리스트">
-    <meta property="og:description" content="망원 셔츠룸, 왜 너는 아직도 거기 없냐? 진짜 셔츠룸의 기준은 망원에서 시작된다. 요즘 뜨는 망원동 셔츠룸 모음, 완벽 정리. 010-6279-0862">
-    <meta property="og:image" content="https://t3b06-mw-shirts-list.vercel.app/og-blog.jpg">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="망원 셔츠룸 모음 — 블로그 | 길거리 브루탈리스트">
-    <meta name="twitter:description" content="망원 셔츠룸, 왜 너는 아직도 거기 없냐? 진짜 셔츠룸의 기준은 망원에서 시작된다.">
-    <meta name="twitter:image" content="https://t3b06-mw-shirts-list.vercel.app/og-blog.jpg">
-    <style>
-        /* RESET / base */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            background: #f5f0e8;
-            color: #1a1a1a;
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            line-height: 1.6;
-            padding: 0 16px;
-        }
-        h1, h2, h3, h4, p, a, div, section, header, nav, main, footer, ul, li, blockquote {
-            outline: none;
-            border: 0;
-        }
-        img, svg {
-            max-width: 100%;
-            height: auto;
-            display: block;
-        }
-        a {
-            color: #1a1a1a;
-            text-decoration: underline;
-            text-underline-offset: 4px;
-        }
-        a:hover {
-            color: #d4a017;
-        }
-        ul, ol {
-            list-style: none;
-            padding-left: 0;
-        }
-        li {
-            margin-bottom: 4px;
-        }
-        /* 타이포그래피 raw */
-        h1 {
-            font-size: 2.8rem;
-            font-weight: 900;
-            text-transform: uppercase;
-            letter-spacing: -1px;
-            line-height: 1.1;
-            border-bottom: 3px solid #1a1a1a;
-            padding-bottom: 12px;
-            margin-bottom: 24px;
-        }
-        h2 {
-            font-size: 2rem;
-            font-weight: 800;
-            text-transform: uppercase;
-            letter-spacing: -0.5px;
-            margin-top: 40px;
-            margin-bottom: 16px;
-            border-left: 6px solid #d4a017;
-            padding-left: 12px;
-        }
-        h3 {
-            font-size: 1.4rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            margin-top: 28px;
-            margin-bottom: 12px;
-        }
-        p {
-            font-size: 1.1rem;
-            margin-bottom: 16px;
-            max-width: 700px;
-        }
-        /* 네비게이션 */
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 16px 0;
-            border-bottom: 3px solid #1a1a1a;
-            margin-bottom: 32px;
-        }
-        .nav-logo {
-            font-size: 1.6rem;
-            font-weight: 900;
-            text-transform: uppercase;
-            letter-spacing: -1px;
-        }
-        .nav-links {
-            display: flex;
-            gap: 24px;
-        }
-        .nav-links a {
-            font-weight: 700;
-            text-transform: uppercase;
-            font-size: 0.9rem;
-            text-decoration: none;
-            border-bottom: 2px solid transparent;
-            transition: border-color 0.2s;
-        }
-        .nav-links a:hover {
-            border-bottom-color: #1a1a1a;
-        }
-        /* 햄버거 (반응형) */
-        .hamburger-menu {
-            display: none;
-            flex-direction: column;
-            cursor: pointer;
-            gap: 5px;
-        }
-        .hamburger-menu span {
-            display: block;
-            width: 28px;
-            height: 3px;
-            background: #1a1a1a;
-        }
-        /* 메인 콘텐츠 */
-        main {
-            max-width: 960px;
-            margin: 0 auto;
-            padding-bottom: 60px;
-        }
-        /* 블로그 포스트 */
-        .blog-post {
-            background: #fff;
-            padding: 32px 24px;
-            border: 3px solid #1a1a1a;
-            box-shadow: 6px 6px 0 #1a1a1a;
-            margin-bottom: 48px;
-        }
-        .blog-post .meta {
-            font-size: 0.85rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            color: #666;
-            margin-bottom: 8px;
-            border-bottom: 1px solid #ddd;
-            padding-bottom: 8px;
-        }
-        .blog-post blockquote {
-            border-left: 6px solid #d4a017;
-            padding-left: 16px;
-            margin: 24px 0;
-            font-style: italic;
-            font-weight: 600;
-            background: #faf6ee;
-            padding: 16px 20px;
-        }
-        .blog-post .cta-box {
-            background: #1a1a1a;
-            color: #f5f0e8;
-            padding: 20px 24px;
-            margin-top: 32px;
-            border: 3px solid #d4a017;
-            text-align: center;
-            font-weight: 800;
-            text-transform: uppercase;
-            font-size: 1.2rem;
-        }
-        .blog-post .cta-box a {
-            color: #d4a017;
-            text-decoration: none;
-            border-bottom: 2px solid #d4a017;
-        }
-        .blog-post .cta-box a:hover {
-            color: #fff;
-            border-bottom-color: #fff;
-        }
-        /* 푸터 */
-        footer {
-            border-top: 3px solid #1a1a1a;
-            padding: 24px 0 40px;
-            text-align: center;
-            font-size: 0.85rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-        footer .tel-link {
-            font-weight: 800;
-            font-size: 1.2rem;
-            display: block;
-            margin-top: 8px;
-        }
-        /* 반응형 768px */
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 2rem;
-            }
-            h2 {
-                font-size: 1.5rem;
-            }
-            nav {
-                flex-wrap: wrap;
-            }
-            .nav-links {
-                display: none;
-                flex-direction: column;
-                width: 100%;
-                gap: 8px;
-                padding: 12px 0;
-                border-top: 2px solid #1a1a1a;
-                margin-top: 12px;
-            }
-            .nav-links.open {
-                display: flex;
-            }
-            .hamburger-menu {
-                display: flex;
-            }
-            .blog-post {
-                padding: 24px 16px;
-            }
-        }
-    </style>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>망원 셔츠룸 모음 — 블로그 | 길거리 브루탈리스트</title>
+ <meta name="description" content="망원 셔츠룸, 왜 너는 아직도 거기 없냐? 진짜 셔츠룸의 기준은 망원에서 시작된다. 요즘 뜨는 망원동 셔츠룸 모음, 완벽 정리.">
+ <meta name="keywords" content="망원 셔츠룸, 망원 셔츠룸 모음, 망원동 셔츠룸, 셔츠룸, 망원, 셔츠, street brutalist, pbn">
+ <meta name="robots" content="index, follow">
+ <link rel="canonical" href="https://mangwon-review-tip.link-hub.org/blog.html">
+ <!-- OG / Twitter -->
+ <meta property="og:type" content="article">
+ <meta property="og:url" content="https://mangwon-review-tip.link-hub.org/blog.html">
+ <meta property="og:title" content="망원 셔츠룸 모음 — 블로그 | 길거리 브루탈리스트">
+ <meta property="og:description" content="망원 셔츠룸, 왜 너는 아직도 거기 없냐? 진짜 셔츠룸의 기준은 망원에서 시작된다. 요즘 뜨는 망원동 셔츠룸 모음, 완벽 정리.">
+ <meta property="og:image" content="https://t3b06-mw-shirts-list.vercel.app/og-blog.jpg">
+ <meta name="twitter:card" content="summary">
+ <meta name="twitter:title" content="망원 셔츠룸 모음 — 블로그 | 길거리 브루탈리스트">
+ <meta name="twitter:description" content="망원 셔츠룸, 왜 너는 아직도 거기 없냐? 진짜 셔츠룸의 기준은 망원에서 시작된다.">
+ <meta name="twitter:image" content="https://t3b06-mw-shirts-list.vercel.app/og-blog.jpg">
+ <style>
+ /* RESET / base */
+ * {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ }
+ body {
+ background: #f5f0e8;
+ color: #1a1a1a;
+ font-family: 'Helvetica Neue', Arial, sans-serif;
+ line-height: 1.6;
+ padding: 0 16px;
+ }
+ h1, h2, h3, h4, p, a, div, section, header, nav, main, footer, ul, li, blockquote {
+ outline: none;
+ border: 0;
+ }
+ img, svg {
+ max-width: 100%;
+ height: auto;
+ display: block;
+ }
+ a {
+ color: #1a1a1a;
+ text-decoration: underline;
+ text-underline-offset: 4px;
+ }
+ a:hover {
+ color: #d4a017;
+ }
+ ul, ol {
+ list-style: none;
+ padding-left: 0;
+ }
+ li {
+ margin-bottom: 4px;
+ }
+ /* 타이포그래피 raw */
+ h1 {
+ font-size: 2.8rem;
+ font-weight: 900;
+ text-transform: uppercase;
+ letter-spacing: -1px;
+ line-height: 1.1;
+ border-bottom: 3px solid #1a1a1a;
+ padding-bottom: 12px;
+ margin-bottom: 24px;
+ }
+ h2 {
+ font-size: 2rem;
+ font-weight: 800;
+ text-transform: uppercase;
+ letter-spacing: -0.5px;
+ margin-top: 40px;
+ margin-bottom: 16px;
+ border-left: 6px solid #d4a017;
+ padding-left: 12px;
+ }
+ h3 {
+ font-size: 1.4rem;
+ font-weight: 700;
+ text-transform: uppercase;
+ margin-top: 28px;
+ margin-bottom: 12px;
+ }
+ p {
+ font-size: 1.1rem;
+ margin-bottom: 16px;
+ max-width: 700px;
+ }
+ /* 네비게이션 */
+ nav {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 16px 0;
+ border-bottom: 3px solid #1a1a1a;
+ margin-bottom: 32px;
+ }
+ .nav-logo {
+ font-size: 1.6rem;
+ font-weight: 900;
+ text-transform: uppercase;
+ letter-spacing: -1px;
+ }
+ .nav-links {
+ display: flex;
+ gap: 24px;
+ }
+ .nav-links a {
+ font-weight: 700;
+ text-transform: uppercase;
+ font-size: 0.9rem;
+ text-decoration: none;
+ border-bottom: 2px solid transparent;
+ transition: border-color 0.2s;
+ }
+ .nav-links a:hover {
+ border-bottom-color: #1a1a1a;
+ }
+ /* 햄버거 (반응형) */
+ .hamburger-menu {
+ display: none;
+ flex-direction: column;
+ cursor: pointer;
+ gap: 5px;
+ }
+ .hamburger-menu span {
+ display: block;
+ width: 28px;
+ height: 3px;
+ background: #1a1a1a;
+ }
+ /* 메인 콘텐츠 */
+ main {
+ max-width: 960px;
+ margin: 0 auto;
+ padding-bottom: 60px;
+ }
+ /* 블로그 포스트 */
+ .blog-post {
+ background: #fff;
+ padding: 32px 24px;
+ border: 3px solid #1a1a1a;
+ box-shadow: 6px 6px 0 #1a1a1a;
+ margin-bottom: 48px;
+ }
+ .blog-post .meta {
+ font-size: 0.85rem;
+ text-transform: uppercase;
+ letter-spacing: 1px;
+ color: #666;
+ margin-bottom: 8px;
+ border-bottom: 1px solid #ddd;
+ padding-bottom: 8px;
+ }
+ .blog-post blockquote {
+ border-left: 6px solid #d4a017;
+ padding-left: 16px;
+ margin: 24px 0;
+ font-style: italic;
+ font-weight: 600;
+ background: #faf6ee;
+ padding: 16px 20px;
+ }
+ .blog-post .cta-box {
+ background: #1a1a1a;
+ color: #f5f0e8;
+ padding: 20px 24px;
+ margin-top: 32px;
+ border: 3px solid #d4a017;
+ text-align: center;
+ font-weight: 800;
+ text-transform: uppercase;
+ font-size: 1.2rem;
+ }
+ .blog-post .cta-box a {
+ color: #d4a017;
+ text-decoration: none;
+ border-bottom: 2px solid #d4a017;
+ }
+ .blog-post .cta-box a:hover {
+ color: #fff;
+ border-bottom-color: #fff;
+ }
+ /* 푸터 */
+ footer {
+ border-top: 3px solid #1a1a1a;
+ padding: 24px 0 40px;
+ text-align: center;
+ font-size: 0.85rem;
+ text-transform: uppercase;
+ letter-spacing: 1px;
+ }
+ footer .tel-link {
+ font-weight: 800;
+ font-size: 1.2rem;
+ display: block;
+ margin-top: 8px;
+ }
+ /* 반응형 768px */
+ @media (max-width: 768px) {
+ h1 {
+ font-size: 2rem;
+ }
+ h2 {
+ font-size: 1.5rem;
+ }
+ nav {
+ flex-wrap: wrap;
+ }
+ .nav-links {
+ display: none;
+ flex-direction: column;
+ width: 100%;
+ gap: 8px;
+ padding: 12px 0;
+ border-top: 2px solid #1a1a1a;
+ margin-top: 12px;
+ }
+ .nav-links.open {
+ display: flex;
+ }
+ .hamburger-menu {
+ display: flex;
+ }
+ .blog-post {
+ padding: 24px 16px;
+ }
+ }
+ </style>
 </head>
 <body>
-    <nav class="nav-present">
-        <div class="nav-logo">망원 셔츠</div>
-        <div class="hamburger-menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <div class="nav-links">
-            <a href="/">홈</a>
-            <a href="/list">모음</a>
-            <a href="/blog" style="border-bottom:2px solid #1a1a1a;">블로그</a>
-            <a href="/contact">문의</a>
-        </div>
-    </nav>
+ <nav class="nav-present">
+ <div class="nav-logo">망원 셔츠</div>
+ <div class="hamburger-menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+ 
+ 
+ 
+ </div>
+ <div class="nav-links">
+ <a href="/">홈</a>
+ <a href="/list">모음</a>
+ <a href="/blog" style="border-bottom:2px solid #1a1a1a;">블로그</a>
+ <a href="/contact">문의</a>
+ </div>
+ </nav>
 
-    <main>
-        <article class="blog-post">
-            <div class="meta">2025.04.08 · 망원 셔츠룸 모음 · by bro</div>
-            <h1>망원 셔츠룸, 왜 너는 아직도 거기 없냐?</h1>
-            <p>야, 이거 읽고 있으면 핸드폰 내려놓고 전화해라. <strong>010-6279-0862</strong>. 망원 셔츠룸, 들어는 봤냐? 모르면 뒤진 거다. 요즘 셔츠룸 씬에서 망원이 어딘데? — 바로 <strong>핵</strong>이다. 압도적 존재감, 촌스러운 건 사절. 시스템 모노 + 임팩트 스택. 3px 실선이 말한다. 너의 셔츠를 걸어라.</p>
+ <main>
+ <article class="blog-post">
+ <div class="meta">2025.04.08 · 망원 셔츠룸 모음 · by bro</div>
+ <h1>망원 셔츠룸, 왜 너는 아직도 거기 없냐?</h1>
+ <p>야, 이거 읽고 있으면 핸드폰 내려놓고 전화해라. <strong></strong>. 망원 셔츠룸, 들어는 봤냐? 모르면 뒤진 거다. 요즘 셔츠룸 씬에서 망원이 어딘데? — 바로 <strong>핵</strong>이다. 압도적 존재감, 촌스러운 건 사절. 시스템 모노 + 임팩트 스택. 3px 실선이 말한다. 너의 셔츠를 걸어라.</p>
 
-            <blockquote>
-                “셔츠룸은 더 이상 옷걸이가 아니다. <br>
-                망원에서 셔츠를 걸면 네 정체성이 걸린다.”
-            </blockquote>
+ <blockquote>
+ “셔츠룸은 더 이상 옷걸이가 아니다. <br>
+ 망원에서 셔츠를 걸면 네 정체성이 걸린다.”
+ </blockquote>
 
-            <h2>왜 망원인가?</h2>
-            <p>첫째, 망원동은 아직 덜 거세됐다. 홍대처럼 상업화에 찌들지 않았고, 성수처럼 가짜 힙이 흐르지 않는다. 여기는 진짜다. <strong>스트릿 브루탈리스트</strong>의 본산. 콘크리트 덩어리 사이로 셔츠 하나 걸면 그게 곧 아트다.</p>
-            <p>둘째, 업주들이 미쳤다. 가격? 생각해라. 퀄리티? 비교 불가. 시스템이 모노톤으로 촘촘하게 짜여 있고, 임팩트는 스택으로 쌓아 올린다. 3px 실선 하나가 말해주지 — 여기는 장난이 아니다.</p>
+ <h2>왜 망원인가?</h2>
+ <p>첫째, 망원동은 아직 덜 거세됐다. 홍대처럼 상업화에 찌들지 않았고, 성수처럼 가짜 힙이 흐르지 않는다. 여기는 진짜다. <strong>스트릿 브루탈리스트</strong>의 본산. 콘크리트 덩어리 사이로 셔츠 하나 걸면 그게 곧 아트다.</p>
+ <p>둘째, 업주들이 미쳤다. 가격? 생각해라. 퀄리티? 비교 불가. 시스템이 모노톤으로 촘촘하게 짜여 있고, 임팩트는 스택으로 쌓아 올린다. 3px 실선 하나가 말해주지 — 여기는 장난이 아니다.</p>
 
-            <h2>망원 셔츠룸 모음 — 진짜만 골랐다</h2>
-            <p>내가 직접 발로 뛰고, 직접 입고, 직접 느꼈다. 블로그에 다 적을 순 없지만, 여기 세 군데는 확실하다. 나머지는 직접 와서 확인해라. 전화 한 통이면 끝이다.<br>
-            <strong>☎️ 010-6279-0862</strong></p>
+ <h2>망원 셔츠룸 모음 — 진짜만 골랐다</h2>
+ <p>내가 직접 발로 뛰고, 직접 입고, 직접 느꼈다. 블로그에 다 적을 순 없지만, 여기 세 군데는 확실하다. 나머지는 직접 와서 확인해라. 전화 한 통이면 끝이다.<br>
+ <strong></strong></p>
 
-            <ul style="margin-bottom: 24px; padding-left: 20px; list-style: disc;">
-                <li><strong>베이스먼트 망원</strong> — 지하 감성, 오버사이즈 실루엣, 시그니처 3px 스티치</li>
-                <li><strong>콘크리트 셔츠 랩</strong> — 모노 크롬 스택, 스트리트 워크웨어 매치</li>
-                <li><strong>노이즈 게이트</strong> — 임팩트 컬러 포인트, 절개 라인이 살인적임</li>
-            </ul>
+ <ul style="margin-bottom: 24px; padding-left: 20px; list-style: disc;">
+ <li><strong>베이스먼트 망원</strong> — 지하 감성, 오버사이즈 실루엣, 시그니처 3px 스티치</li>
+ <li><strong>콘크리트 셔츠 랩</strong> — 모노 크롬 스택, 스트리트 워크웨어 매치</li>
+ <li><strong>노이즈 게이트</strong> — 임팩트 컬러 포인트, 절개 라인이 살인적임</li>
+ </ul>
 
-            <div class="cta-box">
-                지금 전화해라. 네 셔츠가 기다린다.<br>
-                <a href="tel:010-6279-0862" class="tel-link">010-6279-0862</a>
-            </div>
-        </article>
-    </main>
+ <div class="cta-box">
+ 지금 전화해라. 네 셔츠가 기다린다.<br>
+ 
+ </div>
+ </article>
+ </main>
 
-    <footer>
-        <p>ⓒ 2025 망원 셔츠룸 모음 · 길거리 브루탈리스트</p>
-        <a href="tel:010-6279-0862" class="tel-link">010-6279-0862</a>
-    </footer>
+ <footer>
+ <p>ⓒ 2025 망원 셔츠룸 모음 · 길거리 브루탈리스트</p>
+ 
+ </footer>
 
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "BlogPosting",
-        "headline": "망원 셔츠룸, 왜 너는 아직도 거기 없냐?",
-        "description": "망원 셔츠룸 모음 — 진짜 셔츠룸의 기준. 압도적 존재감, 촌스러운 건 사절. 시스템 모노 + 임팩트 스택. 3px 실선이 말한다.",
-        "image": "https://t3b06-mw-shirts-list.vercel.app/og-blog.jpg",
-        "author": {
-            "@type": "Person",
-            "name": "bro"
-        },
-        "publisher": {
-            "@type": "Organization",
-            "name": "망원 셔츠룸 모음",
-            "telephone": "010-6279-0862"
-        },
-        "datePublished": "2025-04-08",
-        "dateModified": "2025-04-08",
-        "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "https://t3b06-mw-shirts-list.vercel.app/blog"
-        },
-        "telephone": "010-6279-0862"
-    }
-    </script>
+ <script type="application/ld+json">{ "@context": "https://schema.org", "@type": "BlogPosting", "headline": "망원 셔츠룸, 왜 너는 아직도 거기 없냐?", "description": "망원 셔츠룸 모음 — 진짜 셔츠룸의 기준. 압도적 존재감, 촌스러운 건 사절. 시스템 모노 + 임팩트 스택.</script>
 </body>
 </html>
